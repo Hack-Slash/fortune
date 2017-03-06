@@ -1,0 +1,21 @@
+
+<% counter = 99 %>
+<% 99.times do  %>
+  <% if counter != 1 %>
+    <p><%= counter %> bottles of beer on the wall. </p>
+    <p><%= counter %> bottles of beer</p>
+    <p>Take one down pass it around </p>
+    <% counter -= 1 %>
+    <% if counter != 1 %>
+        <%= counter %> bottles of beer on the wall.
+      <% else %>
+        <%= counter %> bottle of beer on the wall.
+    <% end %>
+  <% else %>
+    <p><%= counter %> bottle of beer on the wall. </p>
+    <p><%= counter %> bottle of beer</p>
+    <p>Take one down pass it around </p>
+    <% counter -= 1 %>
+    <%= counter %> bottle of beer on the wall.
+  <% end %>
+<% end %>
